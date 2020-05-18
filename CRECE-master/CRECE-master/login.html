@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registrar</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  
+   <form method="POST"action="insertar.php">
+
+
+<div class="container">
+  <div class="profile">
+ <button class="profile__avatar" id="toggleProfile">
+     <img src="login.png." alt="Avatar" /> 
+    </button>
+
+    <div class="profile__form">
+      <div class="profile__fields">
+        <div class="field">
+          
+   <input type="email" name="email" id="email"placeholder="insert your email"required onblur="validarEmail()">
+          <label for="fieldUser" class="label"></label>
+             <div id="mensajecorreo"></div>
+
+        </div>
+
+        <div class="field">
+          <input type="password"name="password"id="password"placeholder="insert your password"required onblur="validarPassword()">
+          <label for="fieldPassword" class="label"></label>
+           <div id="mensajepassword">
+        </div>
+
+          <div class="field">
+           <input type="password"name="confirm password"id="confirm password" placeholder="confirm password" required onblur="validarPassword()">
+            <label for="fieldPassword" class="label"></label>
+    <div id="mensajepassword2">
+        </div>
+
+<div class="profile__footer">
+ <button class="btn">Enviar</button>
+             </div>
+           </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+         <?php include "conexion.php";
+    $consulta="select EMAIL from login";
+    $r= mysqli_query($link,$consulta);
+    while ($arr = mysqli_fetch_array($r)){ ?>
+        <option value="<?php echo $arr[0]?>">
+        
+        </option>
+       
+   <?php } ?>
+    </form>
+    <script src="validar.js"></script>
+</body>
+
+
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+  <script type="text/javascript" src="login.js"></script>
+
+</html>
+
+
+
+
+

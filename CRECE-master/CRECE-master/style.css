@@ -1,0 +1,123 @@
+*{
+    font-family: "Rimouski";
+}
+
+.conta{
+    width: 280px;    
+    background-color: #FFF;
+    
+    border-radius: 10px;
+    padding-bottom : 10px;
+}
+
+.container1{
+	align-items: center;
+	padding: 10px;
+	
+}
+.container2{
+	align-items: center;
+	
+}
+.app-title{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.weather-icon{
+    width: 70px;
+    height: 70px;
+}
+.weather-icon img{
+    display: block;
+	color: #616A6B;
+}
+
+.weather-iconf{
+    width: 40px;
+    height: 40px;
+}
+.weather-iconf img{
+    display: block;
+	color: #616A6B;
+	width: 40px;
+    height: 40px;
+}
+
+.temperature-value{
+    width: 100px;
+    height:40px;
+}
+.temperature-value p{
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+.temperature-value span{
+    font-size: 0.5em;
+}
+
+.temperature-value-f{
+    width: 100px;
+    height:40px;
+}
+.temperature-value-f p{
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+.temperature-value-f span{
+    font-size: 0.5em;
+}
+
+#arbol {
+    height: 60px;
+    width: auto;
+	margin-left: 50px;
+}
+
+.fore{
+	color: #616A6B;
+	background-color: #ADCEC3;
+	
+}
+
+.forecasts{
+	align-items: center;
+	}
+.container-fluid{
+	background-color: #E1E0E0;
+}
+
+.cabeza{
+	background-color: #54CCA5;
+}
+
+.carousel-item img{
+	height: 500px;
+}
+
+.l{azules:
+#54CCA5
+#ADCEC3
+
+grises:
+#E1E0E0
+	
+version de noche:
+#5F45FF
+#5B41FF
+	
+grises de noche:
+#616A6B 
+} 
+
+
